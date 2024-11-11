@@ -14,6 +14,8 @@
    - Herramientas
    - Tubos de hierro
    - Depósitos de hierro
+   - Envoltura de alumnio
+   
 2. Categoría: Papel y cartón
 3. Categoría: Plástico
 4. Categoría: vidrio
