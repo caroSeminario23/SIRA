@@ -10,6 +10,10 @@
    - Papel de aluminio para cocina
    - Objetos decorativos de metal
    - Aros de metal
+   - Cubiertos
+   - Herramientas
+   - Tubos de hierro
+   - Depósitos de hierro
 2. Categoría: Papel y cartón
 3. Categoría: Plástico
 4. Categoría: vidrio

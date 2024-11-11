@@ -1,2 +1,3 @@
 venv
 backend/procesamiento_imagenes/carpeta_salida
+backend/procesamiento_imagenes/carpeta_entrada
