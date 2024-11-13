@@ -2,7 +2,7 @@
 # Sistema de Identificación de Residuos Aprovechables
 
 ## Tipos de objetos plasmados en las imágenes
-1. Categoría: Metal
+1. **Categoría: Metal**
    - Latas de bebidas
    - Latas de conservas
    - Frascos de bebidas
@@ -16,6 +16,12 @@
    - Depósitos de hierro
    - Envoltura de alumnio
    
-2. Categoría: Papel y cartón
+2. **Categoría: Papel y cartón**
+   - Cajas grandes
+   - Cajas de bebidas
+   - Periódicos
+   - Revistas
+   - Hojas bond
+   - Papel arrugado
 3. Categoría: Plástico
 4. Categoría: vidrio
