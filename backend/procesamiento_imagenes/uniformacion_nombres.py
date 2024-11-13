@@ -27,7 +27,7 @@ def obtener_ultimo_numero(carpeta_salida, prefijo):
     
     return ultimo_numero
 
-def renombrar_imagenes(carpeta_entrada, carpeta_salida, prefijo="papel_carton"):
+def renombrar_imagenes(carpeta_entrada, carpeta_salida, prefijo="plastico"):
     """
     Renombra las imágenes de una carpeta de entrada y las guarda en una carpeta de salida
     con un formato estandarizado, continuando la numeración desde el último número usado.
