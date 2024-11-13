@@ -23,5 +23,18 @@
    - Revistas
    - Hojas bond
    - Papel arrugado
-3. Categoría: Plástico
-4. Categoría: vidrio
+
+3. **Categoría: Plástico**
+   - Botellas descartables
+   - Cubiertos descartables
+   - Envases de limpieza
+   - Tápers descartables
+   - Bolsas
+   - Objetos decorativos
+   - Vasos descartables
+
+4. **Categoría: vidrio**
+   - Botellas de diferentes colores
+   - Vasos
+   - Tasas
+   - Envases
