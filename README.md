@@ -37,4 +37,4 @@
    - Botellas de diferentes colores
    - Vasos
    - Tasas
-   - Envases
+   - Envases de vidrio
