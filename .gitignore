@@ -3,3 +3,4 @@ backend/procesamiento_imagenes/carpeta_salida
 backend/procesamiento_imagenes/carpeta_entrada
 backend/models/sira_modelo3.h5
 backend/models/sira_modelo3.keras
+backend/models/sira_modelo3.tflite

@@ -43,7 +43,7 @@ document.querySelector('.subrecuadro4-boton1-recuadro').addEventListener('click'
   document.getElementById('fileInput').click();
 });
 
-// Manejar el evento de cambio del input file para mostrar la imagen seleccionada
+// Mostrar la imagen seleccionada
 document.getElementById('fileInput').addEventListener('change', function(event) {
   const file = event.target.files[0];
   if (file) {
