@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 # Cargar el modelo TFLite
-interpreter = tf.lite.Interpreter(model_path=r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/models/sira_modelo3.tflite')
+interpreter = tf.lite.Interpreter(model_path=r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/models/sira_modelo4.tflite')
 interpreter.allocate_tensors()
 
 # Obtener los detalles de entrada y salida
@@ -11,7 +11,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Cargar la imagen
-cap = cv2.imread(r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/prueba_modelo/imagenes_prueba/prueba3.jpg')
+cap = cv2.imread(r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/prueba_modelo/imagenes_prueba/prueba4.webp')
 
 # Verificar si la imagen se cargó correctamente
 if cap is None:
@@ -30,7 +30,7 @@ interpreter.invoke()
 output_data = interpreter.get_tensor(output_details[0]['index'])
 
 # Obtener la etiqueta de la predicción
-labels = ['Metal', 'Paper o carton', 'Plastico', 'Vidrio']  # Ajusta esto según tus clases
+labels = ['Metal', 'Papel o carton', 'Plastico', 'Vidrio']  # Ajusta esto según tus clases
 predicted_label = labels[np.argmax(output_data)]
 
 # Dibujar el recuadro y la etiqueta sobre la imagen
