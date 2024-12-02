@@ -6,4 +6,4 @@ backend/models/sira_modelo3.keras
 backend/models/sira_modelo3.tflite
 backend/models/sira_modelo4.h5
 backend/models/sira_modelo4.keras
-backend/models/sira_modelo4.tflite
+#backend/models/sira_modelo4.tflite
