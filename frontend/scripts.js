@@ -37,3 +37,27 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 });
+
+// Cargar una imagen
+document.querySelector('.subrecuadro4-boton1-recuadro').addEventListener('click', function() {
+  document.getElementById('fileInput').click();
+});
+
+// Manejar el evento de cambio del input file para mostrar la imagen seleccionada
+document.getElementById('fileInput').addEventListener('change', function(event) {
+  const file = event.target.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      const img = document.createElement('img');
+      img.src = e.target.result;
+      img.alt = 'Imagen cargada';
+      img.style.maxWidth = '100%';
+      img.style.maxHeight = '100%';
+      img.style.objectFit = 'contain';
+      document.querySelector('.bloque3-imagen-recuadro').innerHTML = '';
+      document.querySelector('.bloque3-imagen-recuadro').appendChild(img);
+    };
+    reader.readAsDataURL(file);
+  }
+});
