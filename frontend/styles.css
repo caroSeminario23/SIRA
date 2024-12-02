@@ -40,12 +40,17 @@
     flex-wrap: wrap;
     flex-shrink: 0;
     gap: 24px;
-    position: relative;
+    position: relative; /*fixed*/
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     min-width: 0;
     padding: 12px 32px 12px 32px;
     background: #2d6073;
     border-top: 1px solid #2d6073;
     overflow: hidden;
+    z-index: 1000; 
   }
   .bloque_logo {
     display: flex;
@@ -96,9 +101,9 @@
     position: relative;
     width: 99px;
     padding: 8px 8px 8px 8px;
-    cursor: pointer;
-    background: #f5f5f5;
-    border: none;
+    /*--cursor: pointer;
+    --background: #f5f5f5;
+    --border: none;*/
     z-index: 5;
     border-radius: 8px;
   }
@@ -107,7 +112,7 @@
     flex-basis: auto;
     position: relative;
     height: 16px;
-    color: #1e1e1e;
+    color: #f0f7da;
     font-family: Inter, var(--default-font-family);
     font-size: 16px;
     font-weight: 400;
@@ -115,6 +120,16 @@
     text-align: left;
     white-space: nowrap;
     z-index: 6;
+  }
+
+  .recuadro_opcion1:hover {
+    background: #f5f5f5;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .opcion1:hover {
+    color: #1e1e1e;
   }
 
   .recuadro_opcion2 {
@@ -1450,6 +1465,7 @@
     background-size: cover;
     z-index: 97;
   }
+  /*
   .button-list {
     display: flex;
     align-items: center;
@@ -1497,6 +1513,7 @@
     background-size: 100% 100%;
     z-index: 102;
   }
+  */
   .footer-bloque1 {
     display: flex;
     flex-direction: column;
