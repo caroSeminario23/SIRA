@@ -11,7 +11,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Cargar la imagen
-cap = cv2.imread(r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/prueba_modelo/imagenes_prueba/prueba4.webp')
+cap = cv2.imread(r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/prueba_modelo/imagenes_prueba/prueba11.jpeg')
 
 # Verificar si la imagen se cargó correctamente
 if cap is None:
@@ -28,6 +28,7 @@ input_data = input_data.astype(np.float32) / 255.0
 interpreter.set_tensor(input_details[0]['index'], input_data)
 interpreter.invoke()
 output_data = interpreter.get_tensor(output_details[0]['index'])
+print("Valor: ", output_data)
 
 # Obtener la etiqueta de la predicción
 labels = ['Metal', 'Papel o carton', 'Plastico', 'Vidrio']  # Ajusta esto según tus clases
