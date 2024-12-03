@@ -126,7 +126,7 @@ document.querySelector('.subrecuadro4-boton2-recuadro').addEventListener('click'
 });
 
 // Función para actualizar el contenido de bloque5
-function updateBloque5(label) {
+/*function updateBloque5(label) {
   const recomendaciones = document.getElementById('dinamico');
   let content = '';
 
@@ -217,4 +217,27 @@ function updateBloque5(label) {
   }
 
   recomendaciones.innerHTML = content;
+}*/
+
+// Función para actualizar el contenido de bloque5
+function updateBloque5(label) {
+  const recomendaciones = document.getElementById('dinamico');
+  const tarjetas = recomendaciones.querySelectorAll('[data-label]');
+
+  /*tarjetas.forEach(tarjeta => {
+    if (tarjeta.getAttribute('data-label') === label) {
+      tarjeta.style.display = 'block'; // Mostrar la tarjeta correspondiente
+    } else {
+      tarjeta.style.display = 'none'; // Ocultar las demás tarjetas
+    }
+  });*/
+  tarjetas.forEach(tarjeta => {
+    if (tarjeta.getAttribute('data-label') === label) {
+      tarjeta.classList.add('visible');
+      tarjeta.classList.remove('oculto');
+    } else {
+      tarjeta.classList.add('oculto');
+      tarjeta.classList.remove('visible');
+    }
+  });
 }

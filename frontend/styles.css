@@ -1969,3 +1969,29 @@
     white-space: nowrap;
     z-index: 93;
   }
+
+  .oculto {
+    display: none;
+  }
+  
+  .visible {
+    display: flex; /* O flex/grid según tu layout */
+  }
+
+  .bloque5-tarjeta1,
+  .bloque5-tarjeta2,
+  .bloque5-tarjeta3,
+  .bloque5-tarjeta4 {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .oculto {
+    opacity: 0;
+    transform: scale(0.95);
+    pointer-events: none;
+  }
+
+  .visible {
+    opacity: 1;
+    transform: scale(1);
+  }
