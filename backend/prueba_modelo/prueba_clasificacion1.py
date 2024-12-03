@@ -1,17 +1,27 @@
 import cv2
 import numpy as np
 import tensorflow as tf
+import os
+
+# Obtener el directorio donde se encuentra el script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Construir la ruta relativa al modelo TFLite
+model_path = os.path.join(script_dir, '..', 'models', 'sira_modelo4.tflite')
 
 # Cargar el modelo TFLite
-interpreter = tf.lite.Interpreter(model_path=r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/models/sira_modelo4.tflite')
+interpreter = tf.lite.Interpreter(model_path=model_path)
 interpreter.allocate_tensors()
 
 # Obtener los detalles de entrada y salida
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
+# Construir la ruta relativa a la imagen
+image_path = os.path.join(script_dir, 'imagenes_prueba', 'prueba13.jpg')
+
 # Cargar la imagen
-cap = cv2.imread(r'C:/Users/carolina/Documents/Proyectos_programacion/SIRA/backend/prueba_modelo/imagenes_prueba/prueba11.jpeg')
+cap = cv2.imread(image_path)
 
 # Verificar si la imagen se cargó correctamente
 if cap is None:
