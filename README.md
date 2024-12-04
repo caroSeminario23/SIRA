@@ -38,3 +38,6 @@
    - Vasos
    - Tasas
    - Envases de vidrio
+
+## Visualización de la página web
+![vista de pagina](images/pagina_web.png)
