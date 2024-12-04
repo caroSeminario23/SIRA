@@ -13,7 +13,7 @@ CORS(app, expose_headers=["X-Predicted-Label"])
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construir la ruta relativa al modelo TFLite
-model_path = os.path.join(script_dir, '..', 'models', 'sira_modelo4.tflite')
+model_path = os.path.join(script_dir, '..', 'models', 'sira_modelo5.tflite')
 
 # Cargar el modelo TFLite
 interpreter = tf.lite.Interpreter(model_path=model_path)

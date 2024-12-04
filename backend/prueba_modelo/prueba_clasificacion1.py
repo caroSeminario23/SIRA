@@ -7,7 +7,7 @@ import os
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Construir la ruta relativa al modelo TFLite
-model_path = os.path.join(script_dir, '..', 'models', 'sira_modelo4.tflite')
+model_path = os.path.join(script_dir, '..', 'models', 'sira_modelo5.tflite')
 
 # Cargar el modelo TFLite
 interpreter = tf.lite.Interpreter(model_path=model_path)
@@ -18,7 +18,7 @@ input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
 # Construir la ruta relativa a la imagen
-image_path = os.path.join(script_dir, 'imagenes_prueba', 'prueba13.jpg')
+image_path = os.path.join(script_dir, 'imagenes_prueba', 'prueba4.webp')
 
 # Cargar la imagen
 cap = cv2.imread(image_path)
